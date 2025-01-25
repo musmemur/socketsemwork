@@ -1,0 +1,63 @@
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.exe
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.deps.json
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.runtimeconfig.json
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.pdb
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.GeneratedMSBuildEditorConfig.editorconfig
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.AssemblyInfoInputs.cache
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.AssemblyInfo.cs
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.csproj.CoreCompileInputs.cache
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.sourcelink.json
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\refint\UnoServer.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.pdb
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.genruntimeconfig.cache
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\ref\UnoServer.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.csproj.AssemblyReference.cache
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\Antlr3.Runtime.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\ExpressionEvaluator.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\GSF.Communication.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\GSF.Core.dll
+D:\ITIS\ArtamonovaAngelina\2 курс\3 семестр\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.csproj.Up2Date
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.exe
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.deps.json
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.runtimeconfig.json
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\UnoServer.pdb
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\Antlr3.Runtime.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\ExpressionEvaluator.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\GSF.Communication.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\bin\Debug\net8.0\GSF.Core.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.csproj.AssemblyReference.cache
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.AssemblyInfoInputs.cache
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.AssemblyInfo.cs
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.csproj.CoreCompileInputs.cache
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.sourcelink.json
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.csproj.Up2Date
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\refint\UnoServer.dll
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.pdb
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\UnoServer.genruntimeconfig.cache
+C:\Users\79176\OneDrive\Рабочий стол\GameUno\UnoServer\UnoServer\obj\Debug\net8.0\ref\UnoServer.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\UnoServer.exe
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\UnoServer.deps.json
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\UnoServer.runtimeconfig.json
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\UnoServer.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\UnoServer.pdb
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\Antlr3.Runtime.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\ExpressionEvaluator.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\GSF.Communication.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\bin\Debug\net8.0\GSF.Core.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.csproj.AssemblyReference.cache
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.AssemblyInfoInputs.cache
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.AssemblyInfo.cs
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.csproj.CoreCompileInputs.cache
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.sourcelink.json
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.csproj.Up2Date
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\refint\UnoServer.dll
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.pdb
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\UnoServer.genruntimeconfig.cache
+C:\Users\79176\Homework-musmemur\SocketSemWork\UnoServer\obj\Debug\net8.0\ref\UnoServer.dll

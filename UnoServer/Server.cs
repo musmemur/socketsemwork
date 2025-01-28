@@ -49,13 +49,15 @@ namespace UnoServer
                     await BroadcastAsync("Все игроки подключились. Начинаем выбор действий.");
                     await StartGameAsync();
                 }
+
+                // После завершения игры начинаем обработку запросов на новую игру
+                await HandleNewGameRequestsAsync();
             }
             catch (Exception ex)
             {
                 Console.WriteLine($"Ошибка: {ex.Message}");
             }
         }
-
         private async Task StartGameAsync()
         {
             await BroadcastAsync("Игра начинается! У каждого игрока по 10 жизней.");
@@ -72,6 +74,7 @@ namespace UnoServer
 
             var winner = _players[0].Health > 0 ? "Игрок 1" : "Игрок 2";
             await BroadcastAsync($"Игра окончена! Победитель: {winner}");
+            await BroadcastAsync("Если оба игрока хотят начать новую игру, нажмите кнопку 'Новая игра'.");
         }
 
         private async Task ReceivePlayerActionsAsync(Player player)
@@ -153,6 +156,39 @@ namespace UnoServer
                     .Build();
 
                 await SendPackageAsync(player.Socket, package);
+            }
+        }
+        private async Task HandleNewGameRequestsAsync()
+        {
+            while (true)
+            {
+                foreach (var player in _players)
+                {
+                    var message = await ReceiveMessageAsync(player);
+                    if (message == "newgame")
+                    {
+                        player.WantsNewGame = true;
+                        await SendMessageAsync(player.Socket, "Вы запросили новую игру. Ожидаем второго игрока...");
+                    }
+                }
+
+                // Проверяем, оба ли игрока хотят начать новую игру
+                if (_players.All(p => p.WantsNewGame))
+                {
+                    await BroadcastAsync("Оба игрока согласны на новую игру!");
+                    await ResetGameAsync();
+                    await StartGameAsync();
+                    break;
+                }
+            }
+        }
+        private async Task ResetGameAsync()
+        {
+            foreach (var player in _players)
+            {
+                player.Health = 10;
+                player.Actions = new string[3];
+                player.WantsNewGame = false;
             }
         }
 

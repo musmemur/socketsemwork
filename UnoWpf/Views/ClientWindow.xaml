@@ -39,7 +39,6 @@
             </ScrollViewer>
         </Grid>
 
-
         <!-- Панель для кнопок действий (располагается справа) -->
         <StackPanel x:Name="ActionPanel" Orientation="Vertical" Visibility="Collapsed" Grid.Row="1" Grid.Column="1" Margin="10">
             <TextBlock Text="Выберите действия для 3 ходов:" Margin="0,0,0,10" FontWeight="Bold" FontSize="16"/>
@@ -122,5 +121,9 @@
                 </Grid>
             </StackPanel>
         </StackPanel>
+
+        <!-- Кнопка новой игры -->
+        <Button x:Name="NewGameButton" Content="Начать новую игру" Click="NewGameButton_Click" VerticalAlignment="Bottom" HorizontalAlignment="Right" Margin="10" Width="150" Height="30" Background="#007ACC" Foreground="White" FontSize="14" FontWeight="Bold"/>
+        
     </Grid>
 </Window>

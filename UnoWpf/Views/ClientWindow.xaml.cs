@@ -6,9 +6,6 @@ using System.Windows.Media;
 
 namespace UnoWpf.Views
 {
-    /// <summary>
-    /// Логика взаимодействия для ClientWindow.xaml
-    /// </summary>
     public partial class ClientWindow : Window
     {
         private TcpClient _client;
@@ -20,7 +17,6 @@ namespace UnoWpf.Views
         {
             InitializeComponent();
         }
-
 
         private void Connect_Click(object sender, RoutedEventArgs e)
         {
@@ -68,11 +64,18 @@ namespace UnoWpf.Views
                             ResetActions();
                         }
 
-                        // Если игра завершена, скрываем панель действий
                         if (message.Contains("Игра окончена"))
                         {
                             ActionPanel.Visibility = Visibility.Collapsed;
                             MessageBox.Show(message, "Конец игры");
+                        }
+
+                        // Уведомление для начала новой игры
+                        if (message.Contains("Оба игрока согласны на новую игру!"))
+                        {
+                            MessageBox.Show("Новая игра начинается!");
+                            ActionPanel.Visibility = Visibility.Visible;  // Показать панель действий
+                            ResetActions(); // Сбросить состояния и действия
                         }
                     });
                 }
@@ -85,8 +88,6 @@ namespace UnoWpf.Views
                 });
             }
         }
-
-
 
         private void ActionButton_Click(object sender, RoutedEventArgs e)
         {
@@ -102,7 +103,6 @@ namespace UnoWpf.Views
                 _currentActions++;
                 MessageListBox.Items.Add($"Выбрано: {action}");
 
-                // Блокируем кнопки текущего хода
                 var parentStackPanel = FindParentStackPanel(button);
                 if (parentStackPanel != null)
                 {
@@ -114,7 +114,7 @@ namespace UnoWpf.Views
                             {
                                 if (gridChild is Button gridButton)
                                 {
-                                    gridButton.IsEnabled = false;
+                                    gridButton.IsEnabled = false; // Блокируем кнопки после выбора действия
                                 }
                             }
                         }
@@ -131,8 +131,8 @@ namespace UnoWpf.Views
 
         private void ResetActions()
         {
-            _currentActions = 0; // Сбрасываем счётчик действий
-            Array.Clear(_selectedActions, 0, _selectedActions.Length); // Очищаем массив действий
+            _currentActions = 0;
+            Array.Clear(_selectedActions, 0, _selectedActions.Length);
 
             // Включаем все кнопки в ActionPanel
             foreach (var child in ActionPanel.Children)
@@ -156,7 +156,6 @@ namespace UnoWpf.Views
             }
         }
 
-
         private void SendActionsToServer()
         {
             try
@@ -170,6 +169,22 @@ namespace UnoWpf.Views
                 MessageBox.Show($"Ошибка отправки действий: {ex.Message}");
             }
         }
+
+        private void NewGameButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                // Отправляем команду на начало новой игры
+                byte[] data = Encoding.UTF8.GetBytes("newgame");
+                _stream.Write(data, 0, data.Length);
+                MessageListBox.Items.Add("Запрос на новую игру отправлен серверу.");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Ошибка отправки запроса на новую игру: {ex.Message}");
+            }
+        }
+
 
         private StackPanel FindParentStackPanel(DependencyObject child)
         {
@@ -185,6 +200,5 @@ namespace UnoWpf.Views
 
             return null;
         }
-
     }
 }

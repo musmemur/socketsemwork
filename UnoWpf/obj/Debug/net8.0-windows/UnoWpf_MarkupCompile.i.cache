@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\79176\Homework-musmemur\SocketSemWork\UnoWpf\obj\Debug\net8.0-windows\
+C:\Users\79176\Source\Repos\socket\UnoWpf\obj\Debug\net8.0-windows\
 UnoWpf
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-C:\Users\79176\Homework-musmemur\SocketSemWork\UnoWpf\App.xaml
+C:\Users\79176\Source\Repos\socket\UnoWpf\App.xaml
 2-697951876
 
 7-256260603
-203-1724053913
+204-182633826
 MainWindow.xaml;Views\ClientWindow.xaml;
 
 False

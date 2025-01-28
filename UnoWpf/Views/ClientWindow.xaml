@@ -29,7 +29,7 @@
             <!-- Фон GIF -->
             <Image Stretch="UniformToFill" Opacity="0.5">
                 <gif:ImageBehavior.AnimatedSource>
-                    <BitmapImage UriSource="D:/сокеты/socketsemwork/Gif/sao.gif"/>
+                    <BitmapImage UriSource="pack://siteoforigin:,,,/Gif/sao.gif" />
                 </gif:ImageBehavior.AnimatedSource>
             </Image>
         

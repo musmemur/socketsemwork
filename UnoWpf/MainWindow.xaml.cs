@@ -21,9 +21,9 @@ namespace UnoWpf
             string ip = IpTextBox.Text;
             int port;
 
-            if (!int.TryParse(PortTextBox.Text, out port))
+            if (!int.TryParse(PortTextBox.Text, out port) || port <= 0 || port > 65535)
             {
-                MessageBox.Show("Пожалуйста, введите правильный порт.");
+                MessageBox.Show("Пожалуйста, введите правильный порт (1–65535).");
                 return;
             }
 
@@ -35,10 +35,11 @@ namespace UnoWpf
         {
             try
             {
-                _server = new Server(new IPAddress(new byte[] { 127, 0, 0, 1 }), 12345);
+                var ipAddress = IPAddress.Parse(ip);
+                _server = new Server(ipAddress, port);
                 _server.StartAsync();
 
-                Dispatcher.Invoke(() => LogListBox.Items.Add("Сервер запущен..."));
+                Dispatcher.Invoke(() => LogListBox.Items.Add($"Сервер запущен на {ip}:{port}..."));
             }
             catch (Exception ex)
             {

@@ -21,6 +21,7 @@ namespace UnoWpf.Views
             InitializeComponent();
         }
 
+
         private void Connect_Click(object sender, RoutedEventArgs e)
         {
             try

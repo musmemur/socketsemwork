@@ -8,7 +8,8 @@
     ".NETCoreApp,Version=v8.0": {
       "UnoWpf/1.0.0": {
         "dependencies": {
-          "UnoServer": "1.0.0"
+          "UnoServer": "1.0.0",
+          "WpfAnimatedGif": "2.0.2"
         },
         "runtime": {
           "UnoWpf.dll": {}
@@ -52,6 +53,14 @@
           "lib/net46/GSF.Core.dll": {
             "assemblyVersion": "2.4.28.0",
             "fileVersion": "2.4.28.0"
+          }
+        }
+      },
+      "WpfAnimatedGif/2.0.2": {
+        "runtime": {
+          "lib/netcoreapp3.0/WpfAnimatedGif.dll": {
+            "assemblyVersion": "2.0.0.0",
+            "fileVersion": "2.0.2.0"
           }
         }
       },
@@ -101,6 +110,13 @@
       "sha512": "sha512-K0hUUmf+uIPQPf63ULss+6/7Arwxz0SJAb77146gcOgbPV220R2Cix3UPX/FNIedXpc9Y6LAxJfCCbv+bcGWSw==",
       "path": "gsf.core/2.4.28",
       "hashPath": "gsf.core.2.4.28.nupkg.sha512"
+    },
+    "WpfAnimatedGif/2.0.2": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-B0j9SqtThyHVTiOPvu6yR+39Te0g3o+7Jjb+qEm7+Iz1HRqbE5/4QV+ntHWOYYBPOUFr9x1mdzGl/EzWP+nKiA==",
+      "path": "wpfanimatedgif/2.0.2",
+      "hashPath": "wpfanimatedgif.2.0.2.nupkg.sha512"
     },
     "UnoServer/1.0.0": {
       "type": "project",

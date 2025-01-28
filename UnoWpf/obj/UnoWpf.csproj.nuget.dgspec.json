@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoWpf\\UnoWpf.csproj": {}
+    "D:\\сокеты\\socketsemwork\\UnoWpf\\UnoWpf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoServer\\UnoServer.csproj": {
+    "D:\\сокеты\\socketsemwork\\UnoServer\\UnoServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoServer\\UnoServer.csproj",
+        "projectUniqueName": "D:\\сокеты\\socketsemwork\\UnoServer\\UnoServer.csproj",
         "projectName": "UnoServer",
-        "projectPath": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoServer\\UnoServer.csproj",
-        "packagesPath": "C:\\Users\\79176\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoServer\\obj\\",
+        "projectPath": "D:\\сокеты\\socketsemwork\\UnoServer\\UnoServer.csproj",
+        "packagesPath": "C:\\Users\\garae\\.nuget\\packages\\",
+        "outputPath": "D:\\сокеты\\socketsemwork\\UnoServer\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\79176\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\garae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -26,6 +23,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -42,9 +40,8 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net8.0": {
@@ -66,29 +63,44 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoWpf\\UnoWpf.csproj": {
+    "D:\\сокеты\\socketsemwork\\UnoWpf\\UnoWpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoWpf\\UnoWpf.csproj",
+        "projectUniqueName": "D:\\сокеты\\socketsemwork\\UnoWpf\\UnoWpf.csproj",
         "projectName": "UnoWpf",
-        "projectPath": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoWpf\\UnoWpf.csproj",
-        "packagesPath": "C:\\Users\\79176\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoWpf\\obj\\",
+        "projectPath": "D:\\сокеты\\socketsemwork\\UnoWpf\\UnoWpf.csproj",
+        "packagesPath": "C:\\Users\\garae\\.nuget\\packages\\",
+        "outputPath": "D:\\сокеты\\socketsemwork\\UnoWpf\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\79176\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\garae\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -97,14 +109,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoServer\\UnoServer.csproj": {
-                "projectPath": "C:\\Users\\79176\\Homework-musmemur\\SocketSemWork\\UnoServer\\UnoServer.csproj"
+              "D:\\сокеты\\socketsemwork\\UnoServer\\UnoServer.csproj": {
+                "projectPath": "D:\\сокеты\\socketsemwork\\UnoServer\\UnoServer.csproj"
               }
             }
           }
@@ -117,13 +130,18 @@
         "restoreAuditProperties": {
           "enableAudit": "true",
           "auditLevel": "low",
-          "auditMode": "direct"
-        },
-        "SdkAnalysisLevel": "9.0.100"
+          "auditMode": "all"
+        }
       },
       "frameworks": {
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
+          "dependencies": {
+            "WpfAnimatedGif": {
+              "target": "Package",
+              "version": "[2.0.2, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -135,6 +153,24 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.11, 8.0.11]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
@@ -143,7 +179,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

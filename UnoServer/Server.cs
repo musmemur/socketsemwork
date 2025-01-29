@@ -178,7 +178,6 @@ namespace UnoServer
                     await BroadcastAsync("Оба игрока согласны на новую игру!");
                     await ResetGameAsync();
                     await StartGameAsync();
-                    break;
                 }
             }
         }

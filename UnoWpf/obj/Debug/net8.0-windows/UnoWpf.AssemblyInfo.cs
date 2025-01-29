@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("UnoWpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ac4cbb69aa416b084d477558b4e32041f62dfeb5")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38dac5400338a3269ec68245a2b354d40ef82468")]
 [assembly: System.Reflection.AssemblyProductAttribute("UnoWpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("UnoWpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

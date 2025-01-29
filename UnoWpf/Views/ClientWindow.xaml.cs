@@ -16,6 +16,7 @@ namespace UnoWpf.Views
         public ClientWindow()
         {
             InitializeComponent();
+            NewGameButton.Visibility = Visibility.Collapsed; // Изначально скрыта
         }
 
         private void Connect_Click(object sender, RoutedEventArgs e)
@@ -68,15 +69,17 @@ namespace UnoWpf.Views
                         {
                             ActionPanel.Visibility = Visibility.Collapsed;
                             MessageBox.Show(message, "Конец игры");
+                            NewGameButton.Visibility = Visibility.Visible; // Показываем кнопку
                         }
 
-                        // Уведомление для начала новой игры
                         if (message.Contains("Оба игрока согласны на новую игру!"))
                         {
                             MessageBox.Show("Новая игра начинается!");
-                            ActionPanel.Visibility = Visibility.Visible;  // Показать панель действий
-                            ResetActions(); // Сбросить состояния и действия
+                            ActionPanel.Visibility = Visibility.Visible; 
+                            ResetActions();
+                            NewGameButton.Visibility = Visibility.Collapsed; // Скрываем кнопку
                         }
+
                     });
                 }
             }

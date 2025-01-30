@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.9.34723.18
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SocketSemServer", "SocketSemServer\SocketSemServer.csproj", "{1E9325D7-879A-445B-8741-83DA1AF83358}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketSemWpf", "SocketSemWpf\SocketSemWpf.csproj", "{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1E9325D7-879A-445B-8741-83DA1AF83358}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E9325D7-879A-445B-8741-83DA1AF83358}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E9325D7-879A-445B-8741-83DA1AF83358}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E9325D7-879A-445B-8741-83DA1AF83358}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DE0A1D05-A8DC-4EF2-909A-F997F93E2ED0}
+	EndGlobalSection
+EndGlobal

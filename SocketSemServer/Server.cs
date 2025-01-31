@@ -70,9 +70,17 @@ namespace SocketSemServer
                 await BroadcastHealthAsync();
             }
 
-            var winner = _players[0].Health > 0 ? "Игрок 1" : "Игрок 2";
+            string winner;
+            if (_players[0].Health <= 0 && _players[1].Health <= 0)
+            {
+                winner = "Ничья";
+            }
+            else
+            {
+                winner = _players[0].Health > 0 ? "Игрок 1" : "Игрок 2";
+            }
             await BroadcastAsync($"Игра окончена! Победитель: {winner}");
-            await BroadcastAsync("Если оба игрока хотят начать новую игру, нажмите кнопку 'Новая игра'.");
+            await BroadcastAsync("Если оба игрока хотят начать новую игру, нажмите кнопку 'Начать новую игру'.");
         }
 
         private async Task ReceivePlayerActionsAsync(Player player)
@@ -115,34 +123,29 @@ namespace SocketSemServer
                 Console.WriteLine($"Игрок 1: {action1Type} {action1Target}");
                 Console.WriteLine($"Игрок 2: {action2Type} {action2Target}");
 
-                if (action1Type == "attack" && (action2Type != "defense" || action1Target != action2Target))
+                bool player1Hit = action1Type == "attack" && (action2Type != "defense" || action1Target != action2Target);
+                bool player2Hit = action2Type == "attack" && (action1Type != "defense" || action2Target != action1Target);
+
+                if (player1Hit)
                 {
-                    Console.WriteLine("Игрок 2 пропустил удар!");
                     _players[1].Health--;
                 }
 
-                if (action2Type == "attack" && (action1Type != "defense" || action2Target != action1Target))
+                if (player2Hit)
                 {
-                    Console.WriteLine("Игрок 1 пропустил удар!");
                     _players[0].Health--;
                 }
             }
 
-            foreach (var player in _players)
-            {
-                var playerIndex = _players.IndexOf(player) + 1;
-                var actionsMessage = $"Игрок {playerIndex} выбрал: {string.Join(", ", player.Actions)}";
-                Console.WriteLine(actionsMessage);
-            }
-
-            await BroadcastAsync("Раунд завершён. Начинаем следующий раунд.");
+            await BroadcastPackageAsync(GameCommand.ActionResult, "Раунд завершён. Начинаем следующий раунд. ");
         }
 
         private async Task BroadcastHealthAsync()
         {
             foreach (var player in _players)
             {
-                var healthMessage = $"Ваши жизни: {player.Health}";
+                var healthMessage = $"Ваши жизни: {player.Health}.{Environment.NewLine}";
+
                 Console.WriteLine($"Игрок {(_players.IndexOf(player) + 1)}: {healthMessage}");
 
                 var content = Encoding.UTF8.GetBytes(healthMessage);
@@ -154,6 +157,8 @@ namespace SocketSemServer
                 await SendPackageAsync(player.Socket, package);
             }
         }
+
+
         private async Task HandleNewGameRequestsAsync()
         {
             while (true)
@@ -171,12 +176,12 @@ namespace SocketSemServer
                 if (_players.All(p => p.WantsNewGame))
                 {
                     await BroadcastAsync("Оба игрока согласны на новую игру!");
-                    await ResetGameAsync();
+                    ResetGame();
                     await StartGameAsync();
                 }
             }
         }
-        private async Task ResetGameAsync()
+        private void ResetGame()
         {
             foreach (var player in _players)
             {
@@ -196,16 +201,16 @@ namespace SocketSemServer
             return true;
         }
 
-        private async Task<string> ReceiveMessageAsync(Player player)
+        private static async Task<string> ReceiveMessageAsync(Player player)
         {
             var buffer = new byte[1024];
             var bytesRead = await player.Socket.ReceiveAsync(buffer, SocketFlags.None);
             return Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
         }
 
-        private async Task SendMessageAsync(Socket socket, string message)
+        private static async Task SendMessageAsync(Socket socket, string message)
         {
-            var data = Encoding.UTF8.GetBytes(message + "\n");
+            var data = Encoding.UTF8.GetBytes(message + Environment.NewLine);
             await socket.SendAsync(data, SocketFlags.None);
         }
 
@@ -217,7 +222,7 @@ namespace SocketSemServer
             }
         }
 
-        private async Task SendPackageAsync(Socket socket, byte[] package)
+        private static async Task SendPackageAsync(Socket socket, byte[] package)
         {
             await socket.SendAsync(package, SocketFlags.None);
         }
@@ -225,6 +230,20 @@ namespace SocketSemServer
         private void StopAsync()
         {
             _serverSocket.Close();
+        }
+
+        private async Task BroadcastPackageAsync(GameCommand command, string message)
+        {
+            var content = Encoding.UTF8.GetBytes(message);
+            var package = new GamePackageBuilder(content.Length)
+                .WithCommand(command)
+                .WithContent(content)
+                .Build();
+
+            foreach (var player in _players)
+            {
+                await SendPackageAsync(player.Socket, package);
+            }
         }
     }
 }

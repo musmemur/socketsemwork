@@ -7,7 +7,7 @@
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="700*"/>
             <ColumnDefinition Width="250"/>
-            <ColumnDefinition Width="50"/>
+            <ColumnDefinition Width="30"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -27,7 +27,7 @@
         <!-- Список сообщений -->
         <Grid Grid.Row="1" Margin="10">
             <!-- Фон GIF -->
-            <Image Stretch="UniformToFill" Opacity="0.5">
+            <Image Stretch="UniformToFill" Opacity="0.3">
                 <gif:ImageBehavior.AnimatedSource>
                     <BitmapImage UriSource="pack://siteoforigin:,,,/Gif/sao.gif" />
                 </gif:ImageBehavior.AnimatedSource>
@@ -40,7 +40,7 @@
 
         <!-- Панель для кнопок действий -->
         <StackPanel x:Name="ActionPanel" Orientation="Vertical" Visibility="Collapsed" Grid.Row="1" Grid.Column="1" Margin="10">
-            <TextBlock Text="Выберите действия для 3 ходов:" Margin="0,0,0,10" FontWeight="Bold" FontSize="16"/>
+            <TextBlock Text="Выберите действия:" Margin="0,0,0,10" FontWeight="Bold" FontSize="16"/>
             
             <StackPanel Margin="0,0,0,20">
                 <TextBlock Text="Ход 1" FontWeight="Bold" Margin="0,0,0,5" FontSize="14" Foreground="#007ACC"/>
@@ -59,9 +59,9 @@
                     <Button Content="Attack Middle" Grid.Row="1" Grid.Column="0" Click="ActionButton_Click" Tag="attack middle" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
                     <Button Content="Attack Bottom" Grid.Row="2" Grid.Column="0" Click="ActionButton_Click" Tag="attack bottom" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
                     
-                    <Button Content="Defense Top" Grid.Row="0" Grid.Column="1" Click="ActionButton_Click" Tag="defense top" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
-                    <Button Content="Defense Middle" Grid.Row="1" Grid.Column="1" Click="ActionButton_Click" Tag="defense middle" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
-                    <Button Content="Defense Bottom" Grid.Row="2" Grid.Column="1" Click="ActionButton_Click" Tag="defense bottom" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Top" Grid.Row="0" Grid.Column="1" Click="ActionButton_Click" Tag="defense top" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Middle" Grid.Row="1" Grid.Column="1" Click="ActionButton_Click" Tag="defense middle" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Bottom" Grid.Row="2" Grid.Column="1" Click="ActionButton_Click" Tag="defense bottom" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
                 </Grid>
             </StackPanel>
 
@@ -82,10 +82,10 @@
                     <Button Content="Attack Top" Grid.Row="0" Grid.Column="0" Click="ActionButton_Click" Tag="attack top" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
                     <Button Content="Attack Middle" Grid.Row="1" Grid.Column="0" Click="ActionButton_Click" Tag="attack middle" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
                     <Button Content="Attack Bottom" Grid.Row="2" Grid.Column="0" Click="ActionButton_Click" Tag="attack bottom" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
-                    
-                    <Button Content="Defense Top" Grid.Row="0" Grid.Column="1" Click="ActionButton_Click" Tag="defense top" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
-                    <Button Content="Defense Middle" Grid.Row="1" Grid.Column="1" Click="ActionButton_Click" Tag="defense middle" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
-                    <Button Content="Defense Bottom" Grid.Row="2" Grid.Column="1" Click="ActionButton_Click" Tag="defense bottom" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
+
+                    <Button Content="Defense Top" Grid.Row="0" Grid.Column="1" Click="ActionButton_Click" Tag="defense top" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Middle" Grid.Row="1" Grid.Column="1" Click="ActionButton_Click" Tag="defense middle" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Bottom" Grid.Row="2" Grid.Column="1" Click="ActionButton_Click" Tag="defense bottom" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
                 </Grid>
             </StackPanel>
 
@@ -106,10 +106,10 @@
                     <Button Content="Attack Top" Grid.Row="0" Grid.Column="0" Click="ActionButton_Click" Tag="attack top" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
                     <Button Content="Attack Middle" Grid.Row="1" Grid.Column="0" Click="ActionButton_Click" Tag="attack middle" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
                     <Button Content="Attack Bottom" Grid.Row="2" Grid.Column="0" Click="ActionButton_Click" Tag="attack bottom" Margin="2" Background="#FF5733" Foreground="White" FontSize="12"/>
-                    
-                    <Button Content="Defense Top" Grid.Row="0" Grid.Column="1" Click="ActionButton_Click" Tag="defense top" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
-                    <Button Content="Defense Middle" Grid.Row="1" Grid.Column="1" Click="ActionButton_Click" Tag="defense middle" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
-                    <Button Content="Defense Bottom" Grid.Row="2" Grid.Column="1" Click="ActionButton_Click" Tag="defense bottom" Margin="2" Background="Aqua" Foreground="White" FontSize="12"/>
+
+                    <Button Content="Defense Top" Grid.Row="0" Grid.Column="1" Click="ActionButton_Click" Tag="defense top" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Middle" Grid.Row="1" Grid.Column="1" Click="ActionButton_Click" Tag="defense middle" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
+                    <Button Content="Defense Bottom" Grid.Row="2" Grid.Column="1" Click="ActionButton_Click" Tag="defense bottom" Margin="2" Background="Teal" Foreground="White" FontSize="12"/>
                 </Grid>
             </StackPanel>
         </StackPanel>

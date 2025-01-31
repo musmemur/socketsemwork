@@ -30,8 +30,10 @@ public partial class ClientWindow : Window
             _stream = _client.GetStream();
             MessageListBox.Items.Add("Подключено к серверу!");
 
-            Thread receiveThread = new Thread(ReceiveMessages);
-            receiveThread.IsBackground = true;
+            var receiveThread = new Thread(ReceiveMessages)
+            {
+                IsBackground = true
+            };
             receiveThread.Start();
         }
         catch (Exception ex)
@@ -50,9 +52,13 @@ public partial class ClientWindow : Window
                 int bytesRead = _stream.Read(buffer, 0, buffer.Length);
                 string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
+                // Убираем управляющие символы
+                message = message.Replace("\0", "").Replace("\u0004", "").Trim();
+                message = message.Replace("\r\n", "\n");
+
                 Dispatcher.Invoke(() =>
                 {
-                    MessageListBox.Items.Add($"Ведущий: {message}");
+                    MessageListBox.Items.Add($"{message}");
 
                     if (message.Contains("Начинаем выбор действий"))
                     {
@@ -68,19 +74,20 @@ public partial class ClientWindow : Window
                     if (message.Contains("Игра окончена"))
                     {
                         ActionPanel.Visibility = Visibility.Collapsed;
-                        MessageBox.Show(message, "Конец игры");
-                        NewGameButton.Visibility = Visibility.Visible; 
+                        NewGameButton.Visibility = Visibility.Visible;
+
+                        string winner = ExtractWinner(message);
+                        MessageBox.Show($"Игра окончена! Победитель: {winner}", "Конец игры");
                     }
 
                     if (message.Contains("Оба игрока согласны на новую игру!"))
                     {
                         MessageBox.Show("Новая игра начинается!");
                         MessageListBox.Items.Clear();
-                        ActionPanel.Visibility = Visibility.Visible; 
+                        ActionPanel.Visibility = Visibility.Visible;
                         ResetActions();
-                        NewGameButton.Visibility = Visibility.Collapsed; 
+                        NewGameButton.Visibility = Visibility.Collapsed;
                     }
-
                 });
             }
         }
@@ -92,6 +99,32 @@ public partial class ClientWindow : Window
             });
         }
     }
+    private static string ExtractWinner(string message)
+    {
+        var lines = message.Split("\r\n", StringSplitOptions.RemoveEmptyEntries);
+        const string winnerPrefix = "Игра окончена! Победитель: ";
+
+        foreach (var line in lines)
+        {
+            if (line.Contains(winnerPrefix))
+            {
+                int startIndex = line.IndexOf(winnerPrefix) + winnerPrefix.Length;
+                string winnerPart = line[startIndex..].Trim();
+
+                if (winnerPart.StartsWith("Игрок "))
+                {
+                    return winnerPart.Split(' ').Last();
+                }
+                else
+                {
+                    return "Ничья";
+                }
+            }
+        }
+
+        return "Неизвестно";
+    }
+
 
     private void ActionButton_Click(object sender, RoutedEventArgs e)
     {
@@ -187,7 +220,7 @@ public partial class ClientWindow : Window
     }
 
 
-    private StackPanel FindParentStackPanel(DependencyObject child)
+    private static StackPanel? FindParentStackPanel(DependencyObject child)
     {
         while (child != null)
         {

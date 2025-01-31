@@ -2,17 +2,11 @@
 
 namespace SocketSemServer
 {
-    public class Player
+    public class Player(Socket socket)
     {
-        public Socket Socket { get; private set; }
+        public Socket Socket { get; private set; } = socket;
         public int Health { get; set; } = 10;
         public string[] Actions { get; set; } = new string[3];
-        
         public bool WantsNewGame { get; set; } = false;
-
-        public Player(Socket socket)
-        {
-            Socket = socket;
-        }
     }
 }

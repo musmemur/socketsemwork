@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\сокеты\socketsemwork\SocketSemWpf\obj\Debug\net8.0-windows\
+C:\Users\79176\source\repos\socketsemwork\SocketSemWpf\obj\Debug\net8.0-windows\
 SocketSemWpf
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\сокеты\socketsemwork\SocketSemWpf\App.xaml
+C:\Users\79176\source\repos\socketsemwork\SocketSemWpf\App.xaml
 2-697951876
 
 5-433804703
-204-1142158474
+204-1646312771
 MainWindow.xaml;Views\ClientWindow.xaml;
 
 False

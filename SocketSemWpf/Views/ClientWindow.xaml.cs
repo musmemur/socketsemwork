@@ -112,7 +112,7 @@ public partial class ClientWindow : Window
 
                 if (winnerPart.StartsWith("Игрок "))
                 {
-                    return winnerPart.Split(' ').Last();
+                    return winnerPart.Split('\n')[0];
                 }
                 else
                 {

@@ -52,7 +52,6 @@ public partial class ClientWindow : Window
                 int bytesRead = _stream.Read(buffer, 0, buffer.Length);
                 string message = Encoding.UTF8.GetString(buffer, 0, bytesRead);
 
-                // Убираем управляющие символы
                 message = message.Replace("\0", "").Replace("\u0004", "").Trim();
                 message = message.Replace("\r\n", "\n");
 
@@ -62,6 +61,7 @@ public partial class ClientWindow : Window
 
                     if (message.Contains("Начинаем выбор действий"))
                     {
+                        ConnectButton.Visibility = Visibility.Collapsed;
                         ResetActions();
                         ActionPanel.Visibility = Visibility.Visible;
                     }
@@ -86,7 +86,6 @@ public partial class ClientWindow : Window
                         MessageListBox.Items.Clear();
                         ActionPanel.Visibility = Visibility.Visible;
                         ResetActions();
-                        NewGameButton.Visibility = Visibility.Collapsed;
                     }
                 });
             }
@@ -212,13 +211,13 @@ public partial class ClientWindow : Window
             byte[] data = Encoding.UTF8.GetBytes("newgame");
             _stream.Write(data, 0, data.Length);
             MessageListBox.Items.Add("Запрос на новую игру отправлен серверу.");
+            NewGameButton.Visibility = Visibility.Collapsed;
         }
         catch (Exception ex)
         {
             MessageBox.Show($"Ошибка отправки запроса на новую игру: {ex.Message}");
         }
     }
-
 
     private static StackPanel? FindParentStackPanel(DependencyObject child)
     {

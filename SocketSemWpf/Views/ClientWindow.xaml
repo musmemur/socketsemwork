@@ -21,7 +21,7 @@
             <TextBox x:Name="IpTextBox" Width="150" Text="127.0.0.1" Height="30" Padding="5"/>
             <TextBlock Text="Port:" VerticalAlignment="Center" Margin="10,0,5,0" FontSize="14" FontWeight="SemiBold"/>
             <TextBox x:Name="PortTextBox" Width="80" Text="12345" Height="30" Padding="5"/>
-            <Button Content="Подключиться" Click="Connect_Click" Margin="10,0,0,0" Width="150" Height="30" Background="#007ACC" Foreground="White" FontSize="14" FontWeight="Bold"/>
+            <Button x:Name="ConnectButton" Content="Подключиться" Click="Connect_Click" Margin="10,0,0,0" Width="150" Height="30" Background="#007ACC" Foreground="White" FontSize="14" FontWeight="Bold"/>
         </StackPanel>
 
         <!-- Список сообщений -->

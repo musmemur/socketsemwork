@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SocketSemWpf")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8cbaf9c1bafdde3d69e2bad9b00b0c0ebdfbacb2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+5977d5a726d27d69ceedf0b0f76ae6677c5069e4")]
 [assembly: System.Reflection.AssemblyProductAttribute("SocketSemWpf")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SocketSemWpf")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -7,38 +7,6 @@
       "RelativeMoniker": "D:0:0:{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}|SocketSemWpf\\SocketSemWpf.csproj|solutionrelative:socketsemwpf\\views\\clientwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}|SocketSemWpf\\SocketSemWpf.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemwpf\\views\\clientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{B14C7B17-35B3-412F-80D2-BAE057F2D8F1}|SocketSemWpf\\SocketSemWpf.csproj|solutionrelative:socketsemwpf\\views\\clientwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\gamecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\gamecommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\server.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\player.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\gamepackagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\gamepackagehelper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\fullnesspackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\fullnesspackage.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\gamepackagebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\gamepackagebuilder.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|c:\\users\\79176\\source\\repos\\socketsemwork\\socketsemserver\\querytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{1E9325D7-879A-445B-8741-83DA1AF83358}|SocketSemServer\\SocketSemServer.csproj|solutionrelative:socketsemserver\\querytype.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -50,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -66,129 +34,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ClientWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\Views\\ClientWindow.xaml",
-              "RelativeDocumentMoniker": "SocketSemWpf\\Views\\ClientWindow.xaml",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\Views\\ClientWindow.xaml",
-              "RelativeToolTip": "SocketSemWpf\\Views\\ClientWindow.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-01-31T16:39:20.497Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
               "Title": "ClientWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\Views\\ClientWindow.xaml.cs",
               "RelativeDocumentMoniker": "SocketSemWpf\\Views\\ClientWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\Views\\ClientWindow.xaml.cs*",
-              "RelativeToolTip": "SocketSemWpf\\Views\\ClientWindow.xaml.cs*",
-              "ViewState": "AgIAADMAAAAAAAAAAAAAAEIAAABJAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\Views\\ClientWindow.xaml.cs",
+              "RelativeToolTip": "SocketSemWpf\\Views\\ClientWindow.xaml.cs",
+              "ViewState": "AgIAAFgAAAAAAAAAAAAqwGYAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T16:20:18.079Z",
+              "WhenOpened": "2025-01-31T17:31:00.184Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Player.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\Player.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\Player.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\Player.cs",
-              "RelativeToolTip": "SocketSemServer\\Player.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:06:56.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "GameCommand.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\GameCommand.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\GameCommand.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\GameCommand.cs",
-              "RelativeToolTip": "SocketSemServer\\GameCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:07:26.349Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "FullnessPackage.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\FullnessPackage.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\FullnessPackage.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\FullnessPackage.cs",
-              "RelativeToolTip": "SocketSemServer\\FullnessPackage.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:07:34.528Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Server.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\Server.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\Server.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\Server.cs",
-              "RelativeToolTip": "SocketSemServer\\Server.cs",
-              "ViewState": "AgIAAM0AAAAAAAAAAAAowOAAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T14:28:59.49Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GamePackageHelper.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\GamePackageHelper.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\GamePackageHelper.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\GamePackageHelper.cs",
-              "RelativeToolTip": "SocketSemServer\\GamePackageHelper.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAlAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:07:10.072Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "GamePackageBuilder.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\GamePackageBuilder.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\GamePackageBuilder.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\GamePackageBuilder.cs",
-              "RelativeToolTip": "SocketSemServer\\GamePackageBuilder.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:07:17.686Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\Program.cs",
-              "RelativeDocumentMoniker": "SocketSemServer\\Program.cs",
-              "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\Program.cs",
-              "RelativeToolTip": "SocketSemServer\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:06:49.185Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 1,
               "Title": "QueryType.cs",
               "DocumentMoniker": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\QueryType.cs",
               "RelativeDocumentMoniker": "SocketSemServer\\QueryType.cs",
               "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\QueryType.cs",
               "RelativeToolTip": "SocketSemServer\\QueryType.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T15:06:42.85Z",
               "EditorCaption": ""

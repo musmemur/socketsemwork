@@ -33,7 +33,7 @@ namespace SocketSemServer
 
                     if (_players.Count >= MaxPlayers)
                     {
-                        await SendMessageAsync(clientSocket, "Сессия заполнена, попробуйте позже.");
+                        await SendMessageAsync(clientSocket, "Сессия заполнена, попробуйте позже.", GameCommand.ActionResult, QueryType.Response);
                         clientSocket.Close();
                         continue;
                     }
@@ -41,7 +41,7 @@ namespace SocketSemServer
                     var player = new Player(clientSocket);
                     _players.Add(player);
                     Console.WriteLine($"Игрок {_players.Count} подключился.");
-                    await SendMessageAsync(player.Socket, $"Добро пожаловать, Игрок {_players.Count}!");
+                    await SendMessageAsync(player.Socket, $"Добро пожаловать, Игрок {_players.Count}! ", GameCommand.ActionResult, QueryType.Response);
                 }
 
                 if (_players.Count == MaxPlayers)
@@ -49,7 +49,7 @@ namespace SocketSemServer
                     await BroadcastAsync("Все игроки подключились. Начинаем выбор действий.");
                     await StartGameAsync();
                 }
-                
+
                 await HandleNewGameRequestsAsync();
             }
             catch (Exception ex)
@@ -57,6 +57,7 @@ namespace SocketSemServer
                 Console.WriteLine($"Ошибка: {ex.Message}");
             }
         }
+
         private async Task StartGameAsync()
         {
             await BroadcastAsync("Игра начинается! У каждого игрока по 10 жизней.");
@@ -79,7 +80,7 @@ namespace SocketSemServer
             {
                 winner = _players[0].Health > 0 ? "Игрок 1" : "Игрок 2";
             }
-            await BroadcastAsync($"Игра окончена! Победитель: {winner}");
+            await BroadcastAsync($"Игра окончена! Победитель: {winner}. ");
             await BroadcastAsync("Если оба игрока хотят начать новую игру, нажмите кнопку 'Начать новую игру'.");
         }
 
@@ -87,7 +88,7 @@ namespace SocketSemServer
         {
             var playerIndex = _players.IndexOf(player) + 1;
 
-            await SendMessageAsync(player.Socket, "Введите 3 действия");
+            await SendMessageAsync(player.Socket, "Введите 3 действия", GameCommand.ActionRequest, QueryType.Request);
 
             string actions = await ReceiveMessageAsync(player);
 
@@ -97,12 +98,12 @@ namespace SocketSemServer
             {
                 player.Actions = actionsArray;
 
-                await SendMessageAsync(player.Socket, "Ваши действия получены.");
+                await SendMessageAsync(player.Socket, "Ваши действия получены.", GameCommand.ActionResult, QueryType.Response);
             }
             else
             {
-                await SendMessageAsync(player.Socket, "Некорректный формат действий. Попробуйте снова.");
-                await ReceivePlayerActionsAsync(player); 
+                await SendMessageAsync(player.Socket, "Некорректный формат действий. Попробуйте снова.", GameCommand.ActionError, QueryType.Response);
+                await ReceivePlayerActionsAsync(player);
             }
         }
 
@@ -140,21 +141,18 @@ namespace SocketSemServer
             await BroadcastPackageAsync(GameCommand.ActionResult, "Раунд завершён. Начинаем следующий раунд. ");
         }
 
+
         private async Task BroadcastHealthAsync()
         {
             foreach (var player in _players)
             {
                 var healthMessage = $"Ваши жизни: {player.Health}.{Environment.NewLine}";
-
                 Console.WriteLine($"Игрок {(_players.IndexOf(player) + 1)}: {healthMessage}");
 
                 var content = Encoding.UTF8.GetBytes(healthMessage);
-                var package = new GamePackageBuilder(content.Length)
-                    .WithCommand(GameCommand.HealthUpdate)
-                    .WithContent(content)
-                    .Build();
+                var package = PackageHelper.CreatePackage(content, GameCommand.HealthUpdate, FullnessPackage.Full, QueryType.Response);
 
-                await SendPackageAsync(player.Socket, package);
+                await SendPackageAsync(player.Socket, package[11..]);
             }
         }
 
@@ -172,7 +170,7 @@ namespace SocketSemServer
                         await SendMessageAsync(player.Socket, "Вы запросили новую игру. Ожидаем второго игрока...");
                     }
                 }
-                
+
                 if (_players.All(p => p.WantsNewGame))
                 {
                     await BroadcastAsync("Оба игрока согласны на новую игру!");
@@ -181,6 +179,7 @@ namespace SocketSemServer
                 }
             }
         }
+
         private void ResetGame()
         {
             foreach (var player in _players)
@@ -189,6 +188,7 @@ namespace SocketSemServer
                 player.Actions = new string[3];
                 player.WantsNewGame = false;
             }
+            Console.WriteLine("Игра сброшена. Готово к новой игре.");
         }
 
         private bool ValidateAction(string action)
@@ -203,9 +203,20 @@ namespace SocketSemServer
 
         private static async Task<string> ReceiveMessageAsync(Player player)
         {
-            var buffer = new byte[1024];
+            var buffer = new byte[512];
             var bytesRead = await player.Socket.ReceiveAsync(buffer, SocketFlags.None);
             return Encoding.UTF8.GetString(buffer, 0, bytesRead).Trim();
+        }
+
+        private static async Task SendMessageAsync(Socket socket, string message, GameCommand command, QueryType queryType)
+        {
+            var content = Encoding.UTF8.GetBytes(message);
+            var packages = PackageHelper.GetPackagesByMessage(content, command, queryType);
+
+            foreach (var package in packages)
+            {
+                await socket.SendAsync(package[11..], SocketFlags.None);
+            }
         }
 
         private static async Task SendMessageAsync(Socket socket, string message)
@@ -218,7 +229,7 @@ namespace SocketSemServer
         {
             foreach (var player in _players)
             {
-                await SendMessageAsync(player.Socket, message);
+                await SendMessageAsync(player.Socket, message, GameCommand.ActionResult, QueryType.Response);
             }
         }
 
@@ -235,15 +246,16 @@ namespace SocketSemServer
         private async Task BroadcastPackageAsync(GameCommand command, string message)
         {
             var content = Encoding.UTF8.GetBytes(message);
-            var package = new GamePackageBuilder(content.Length)
+            var package = new PackageBuilder(content.Length)
                 .WithCommand(command)
                 .WithContent(content)
                 .Build();
 
             foreach (var player in _players)
             {
-                await SendPackageAsync(player.Socket, package);
+                await SendPackageAsync(player.Socket, package[11..]);
             }
         }
+
     }
 }

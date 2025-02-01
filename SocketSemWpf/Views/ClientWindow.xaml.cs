@@ -77,7 +77,9 @@ public partial class ClientWindow : Window
                         NewGameButton.Visibility = Visibility.Visible;
 
                         string winner = ExtractWinner(message);
-                        MessageBox.Show($"Игра окончена! Победитель: {winner}", "Конец игры");
+                        string modifiedWinner = winner.Length == 5 ? winner : winner[..8];
+
+                        MessageBox.Show($"Игра окончена! Победитель: {modifiedWinner}", "Конец игры");
                     }
 
                     if (message.Contains("Оба игрока согласны на новую игру!"))

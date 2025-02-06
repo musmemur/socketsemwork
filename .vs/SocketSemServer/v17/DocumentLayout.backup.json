@@ -40,7 +40,7 @@
               "RelativeDocumentMoniker": "SocketSemWpf\\Views\\ClientWindow.xaml.cs",
               "ToolTip": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\Views\\ClientWindow.xaml.cs",
               "RelativeToolTip": "SocketSemWpf\\Views\\ClientWindow.xaml.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAqwGYAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAFwAAAAAAAAAAAAAAGgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-31T17:31:00.184Z",
               "EditorCaption": ""
@@ -55,8 +55,7 @@
               "RelativeToolTip": "SocketSemServer\\QueryType.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-31T15:06:42.85Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-31T15:06:42.85Z"
             }
           ]
         }

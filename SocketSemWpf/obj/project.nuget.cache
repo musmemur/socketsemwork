@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "BedXwxxdP2I=",
+  "dgSpecHash": "jk6HU8MkG5o=",
   "success": true,
-  "projectFilePath": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\SocketSemWpf.csproj",
+  "projectFilePath": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemWpf\\SocketSemWpf.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\79176\\.nuget\\packages\\antlr\\3.5.0.2\\antlr.3.5.0.2.nupkg.sha512",
     "C:\\Users\\79176\\.nuget\\packages\\expressionevaluator\\2.0.4\\expressionevaluator.2.0.4.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\SocketSemWpf.csproj": {}
+    "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemWpf\\SocketSemWpf.csproj": {}
   },
   "projects": {
-    "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\SocketSemServer.csproj": {
+    "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemServer\\SocketSemServer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\SocketSemServer.csproj",
+        "projectUniqueName": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemServer\\SocketSemServer.csproj",
         "projectName": "SocketSemServer",
-        "projectPath": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\SocketSemServer.csproj",
+        "projectPath": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemServer\\SocketSemServer.csproj",
         "packagesPath": "C:\\Users\\79176\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\obj\\",
+        "outputPath": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemServer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -75,14 +75,14 @@
         }
       }
     },
-    "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\SocketSemWpf.csproj": {
+    "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemWpf\\SocketSemWpf.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\SocketSemWpf.csproj",
+        "projectUniqueName": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemWpf\\SocketSemWpf.csproj",
         "projectName": "SocketSemWpf",
-        "projectPath": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\SocketSemWpf.csproj",
+        "projectPath": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemWpf\\SocketSemWpf.csproj",
         "packagesPath": "C:\\Users\\79176\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemWpf\\obj\\",
+        "outputPath": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemWpf\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -103,8 +103,8 @@
           "net8.0-windows7.0": {
             "targetAlias": "net8.0-windows",
             "projectReferences": {
-              "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\SocketSemServer.csproj": {
-                "projectPath": "C:\\Users\\79176\\source\\repos\\socketsemwork\\SocketSemServer\\SocketSemServer.csproj"
+              "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemServer\\SocketSemServer.csproj": {
+                "projectPath": "C:\\Users\\79176\\Homework-musmemur\\socket-semwork-musmemur\\SocketSemServer\\SocketSemServer.csproj"
               }
             }
           }
